@@ -1,0 +1,86 @@
+.quote-list-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.quote-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 10px;
+}
+
+.quote-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.quote-card:hover {
+    transform: scale(1.05);
+}
+
+.quote-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.quote-text {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.username, .created-at {
+    font-size: 12px;
+    color: #777;
+}
+
+.error {
+    color: red;
+}
+
+button {
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+p {
+    font-size: 18px;
+}
+
+p.error {
+    color: red;
+}
+
+
+.quote-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 16px; 
+}
+
+@media (max-width: 768px) {
+    .quote-list {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-list {
+        grid-template-columns: 1fr; 
+    }
+}
